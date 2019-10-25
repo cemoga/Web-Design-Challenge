@@ -2,3 +2,46 @@
     background-color:  #2aafaf;
     color="red"
 }
+
+.small-image {
+
+  
+    max-width: 350px;
+    display: inline;
+  }
+
+
+
+
+  h1 {
+
+    color: #2aafaf;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 20px;
+  
+  }
+
+  p {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 20px;
+  
+  }
+
+  body {
+    background-color:#F0F0F0;
+
+  }
+
+  footer {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:darkgray;
+    color: white;
+    font-size: 20px;
+    height: 90px;
+    border-top: 7px solid #2aafaf;
+    padding-top: 30px;
+    
+  }
