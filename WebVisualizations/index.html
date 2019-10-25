@@ -14,26 +14,29 @@
 
 <body>
 
+<!-- Menu Dropdown -->
 <nav class="navbar navbar-default" >
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">Lattitude</a>
+      <p class="navbar-brand" style="background-color: #2aafaf; color: white;">Lattitude</p>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="index.html">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plot <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Humidity</a></li>
-          <li><a href="#">Cloudiness</a></li>
-          <li><a href="#">Wind Speed</a></li>
+          <li><a href="temperature.html">Temperature</a></li>
+          <li><a href="cloudiness.html">Cloudiness</a></li>
+          <li><a href="humidity.html">Humidity</a></li>
+          <li><a href="wind.html">Wind Speed</a></li>
         </ul>
       </li>
-      <li><a href="#">Comparison</a></li>
-      <li><a href="#">Data</a></li>
+      <li><a href="comparison.html">Comparison</a></li>
+      <li><a href="data.html">Data</a></li>
     </ul>
   </div>
 </nav>
-  
+
+<!-- Table for Data Sheet -->
 <div class="container" style="background-color: white;">
         <h1 >Data</h2>
         <hr style="margin: 0.1em auto">
@@ -6625,7 +6628,10 @@
         </div>
 </div>
 
-<div class="row">
+
+<!-- Landing Page -->
+<div class="container" style="background-color: white;"></div>
+  <div class="row">
         <div class="col-md-12 col-md-6" style="background-color: white;">
                     <h1>
                         Summary: Lattitude vs. X
@@ -6644,17 +6650,300 @@
                     Visualizations
                 </h1>
                 <hr>
-                <div class="col-md-12" style="background-color: white;">
-                    <img class="small-image img-responsive" src="images/fig1.png" alt="Sample Plot">
-                    <img class="small-image img-responsive" src="images/fig2.png" alt="Sample Plot">
+                <div class="col-md-12 col-md-6" style="background-color: white;">
+                    <div>
+                        <h2>Max Temperature</h2>
+                        <a href="temperature.html">
+                          <img class="medium-image img-responsive center-block" src="images/fig1.png" alt="Temperature">
+                        </a>
+                    </div>
+                    <div>
+                        <h2>Humidity</h2>
+                        <a href="humidity.html">
+                          <img class="medium-image img-responsive center-block" src="images/fig2.png" alt="Humidity">
+                        </a>
+                      </div>
+                    
                 </div>
-                <div class="col-md-12" style="background-color: white;">
-                    <img class="small-image img-responsive" src="images/fig3.png" alt="Sample Plot">
-                    <img class="small-image img-responsive" src="images/fig3.png" alt="Sample Plot">
+                <div class="ccol-md-12 col-md-6" style="background-color: white;">
+                    <div>
+                        <h2>Cloudiness</h2>
+                        <a href="cloudiness.html">
+                        <img class="medium-image img-responsive center-block" src="images/fig3.png" alt="Cloudiness">
+                        </a>
+                    </div>
+                    <div>
+                        <h2>Wind Speed</h2>
+                        <a href="wind.html"">
+                        <img class="medium-image img-responsive center-block" src="images/fig4.png" alt="Speed">
+                      </a>
+                    </div>
                 </div>
         </div>
+  </div>
 </div>
 
+<!-- Comparison-->
+<div class="container" style="background-color: white;">
+  <div class="row">
+            <h1>
+                Comparison: Lattitude vs. X
+            </h1>
+            <hr style="margin: 0.1em auto">
+            <p>
+                Click any plot to get an in-depth analysis.
+            </p>
+            <div class="col-md-6" style="background-color: white;">
+                <div>
+                    <h2>Max Temperature</h2>
+                    <a href="temperature.html">
+                      <img class="medium-image img-responsive center-block" src="images/fig1.png" alt="Temperature">
+                    </a>
+                </div>
+                <div>
+                    <h2>Humidity</h2>
+                    <a href="humidity.html">
+                      <img class="medium-image img-responsive center-block" src="images/fig2.png" alt="Humidity">
+                    </a>
+                  </div>
+                
+            </div>
+            <div class="col-md-6" style="background-color: white;">
+                <div>
+                    <h2>Cloudiness</h2>
+                    <a href="cloudiness.html">
+                    <img class="medium-image img-responsive center-block" src="images/fig3.png" alt="Cloudiness">
+                    </a>
+                </div>
+                <div>
+                    <h2>Wind Speed</h2>
+                    <a href="wind.html"">
+                    <img class="medium-image img-responsive center-block" src="images/fig4.png" alt="Speed">
+                  </a>
+                </div>
+            </div>
+  </div>
+</div>
+
+
+<!-- Temperature Page -->
+<div class="container" style="background-color: white;"></div>
+  <div class="row">
+        <div class="col-md-12 col-md-6" style="background-color: white;">
+                    <h1>
+                        Max Temperature
+                    </h1>
+                    <hr>
+                    <img class="big-image img-responsive" src="images/fig1.png" alt="Temperature">
+                    <p>
+                        The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. 
+                    </p>
+                    <p>
+                        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. 
+                    </p>
+        </div>
+        <div class="col-md-12 col-md-6" style="background-color: white;">
+                <h1>
+                    Visualizations
+                </h1>
+                <hr>
+                <div class="col-md-12 col-md-6" style="background-color: white;">
+                    <div>
+                        <h2>Max Temperature</h2>
+                        <a href="temperature.html">
+                          <img class="medium-image img-responsive center-block" src="images/fig1.png" alt="Temperature">
+                        </a>
+                    </div>
+                    <div>
+                        <h2>Humidity</h2>
+                        <a href="humidity.html">
+                          <img class="medium-image img-responsive center-block" src="images/fig2.png" alt="Humidity">
+                        </a>
+                      </div>
+                    
+                </div>
+                <div class="ccol-md-12 col-md-6" style="background-color: white;">
+                    <div>
+                        <h2>Cloudiness</h2>
+                        <a href="cloudiness.html">
+                        <img class="medium-image img-responsive center-block" src="images/fig3.png" alt="Cloudiness">
+                        </a>
+                    </div>
+                    <div>
+                        <h2>Wind Speed</h2>
+                        <a href="wind.html"">
+                        <img class="medium-image img-responsive center-block" src="images/fig4.png" alt="Speed">
+                      </a>
+                    </div>
+                </div>
+        </div>
+  </div>
+</div>
+
+
+<!-- Cloudiness Page -->
+<div class="container" style="background-color: white;"></div>
+  <div class="row">
+        <div class="col-md-12 col-md-6" style="background-color: white;">
+                    <h1>
+                        Cloudiness
+                    </h1>
+                    <hr>
+                    <img class="big-image img-responsive" src="images/fig2.png" alt="Cloudiness">
+                    <p>
+                        The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. 
+                    </p>
+                    <p>
+                        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. 
+                    </p>
+        </div>
+        <div class="col-md-12 col-md-6" style="background-color: white;">
+                <h1>
+                    Visualizations
+                </h1>
+                <hr>
+                <div class="col-md-12 col-md-6" style="background-color: white;">
+                    <div>
+                        <h2>Max Temperature</h2>
+                        <a href="temperature.html">
+                          <img class="medium-image img-responsive center-block" src="images/fig1.png" alt="Temperature">
+                        </a>
+                    </div>
+                    <div>
+                        <h2>Humidity</h2>
+                        <a href="humidity.html">
+                          <img class="medium-image img-responsive center-block" src="images/fig2.png" alt="Humidity">
+                        </a>
+                      </div>
+                    
+                </div>
+                <div class="ccol-md-12 col-md-6" style="background-color: white;">
+                    <div>
+                        <h2>Cloudiness</h2>
+                        <a href="cloudiness.html">
+                        <img class="medium-image img-responsive center-block" src="images/fig3.png" alt="Cloudiness">
+                        </a>
+                    </div>
+                    <div>
+                        <h2>Wind Speed</h2>
+                        <a href="wind.html"">
+                        <img class="medium-image img-responsive center-block" src="images/fig4.png" alt="Speed">
+                      </a>
+                    </div>
+                </div>
+        </div>
+  </div>
+</div>
+
+<!-- Humidity Page -->
+<div class="container" style="background-color: white;"></div>
+  <div class="row">
+        <div class="col-md-12 col-md-6" style="background-color: white;">
+                    <h1>
+                        Humidity
+                    </h1>
+                    <hr>
+                    <img class="big-image img-responsive" src="images/fig3.png" alt="Humidity">
+                    <p>
+                        The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. 
+                    </p>
+                    <p>
+                        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. 
+                    </p>
+        </div>
+        <div class="col-md-12 col-md-6" style="background-color: white;">
+                <h1>
+                    Visualizations
+                </h1>
+                <hr>
+                <div class="col-md-12 col-md-6" style="background-color: white;">
+                    <div>
+                        <h2>Max Temperature</h2>
+                        <a href="temperature.html">
+                          <img class="medium-image img-responsive center-block" src="images/fig1.png" alt="Temperature">
+                        </a>
+                    </div>
+                    <div>
+                        <h2>Humidity</h2>
+                        <a href="humidity.html">
+                          <img class="medium-image img-responsive center-block" src="images/fig2.png" alt="Humidity">
+                        </a>
+                      </div>
+                    
+                </div>
+                <div class="ccol-md-12 col-md-6" style="background-color: white;">
+                    <div>
+                        <h2>Cloudiness</h2>
+                        <a href="cloudiness.html">
+                        <img class="medium-image img-responsive center-block" src="images/fig3.png" alt="Cloudiness">
+                        </a>
+                    </div>
+                    <div>
+                        <h2>Wind Speed</h2>
+                        <a href="wind.html"">
+                        <img class="medium-image img-responsive center-block" src="images/fig4.png" alt="Speed">
+                      </a>
+                    </div>
+                </div>
+        </div>
+  </div>
+</div>
+
+<!-- Wind Speed Page -->
+<div class="container" style="background-color: white;"></div>
+  <div class="row">
+        <div class="col-md-12 col-md-6" style="background-color: white;">
+                    <h1>
+                        Wind Speed
+                    </h1>
+                    <hr>
+                    <img class="big-image img-responsive" src="images/fig4.png" alt="Wind Speed">
+                    <p>
+                        The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. 
+                    </p>
+                    <p>
+                        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. 
+                    </p>
+        </div>
+        <div class="col-md-12 col-md-6" style="background-color: white;">
+                <h1>
+                    Visualizations
+                </h1>
+                <hr>
+                <div class="col-md-12 col-md-6" style="background-color: white;">
+                    <div>
+                        <h2>Max Temperature</h2>
+                        <a href="temperature.html">
+                          <img class="medium-image img-responsive center-block" src="images/fig1.png" alt="Temperature">
+                        </a>
+                    </div>
+                    <div>
+                        <h2>Humidity</h2>
+                        <a href="humidity.html">
+                          <img class="medium-image img-responsive center-block" src="images/fig2.png" alt="Humidity">
+                        </a>
+                      </div>
+                    
+                </div>
+                <div class="ccol-md-12 col-md-6" style="background-color: white;">
+                    <div>
+                        <h2>Cloudiness</h2>
+                        <a href="cloudiness.html">
+                        <img class="medium-image img-responsive center-block" src="images/fig3.png" alt="Cloudiness">
+                        </a>
+                    </div>
+                    <div>
+                        <h2>Wind Speed</h2>
+                        <a href="wind.html"">
+                        <img class="medium-image img-responsive center-block" src="images/fig4.png" alt="Speed">
+                      </a>
+                    </div>
+                </div>
+        </div>
+  </div>
+</div>
+
+<!-- Footer -->
     <footer>
         <div class="footer-copyright text-center py-3">© Copyright Cesar Mosquera 2019:
             <a href="https://www.linkedin.com/in/cesarmosquera/en" target="_blank">Cesar Mosquera</a>

@@ -1,23 +1,50 @@
-.green {
-    background-color:  #2aafaf;
-    color="red"
-}
 
 .small-image {
+  max-width: 400px;
+  height: auto;
 
-  
-    max-width: 350px;
-    display: inline;
+}
 
-  }
+.medium-image {
 
-  h1 {
+  width: 100%;
+  height: auto;
+
+}
+
+.big-image {
+
+  width: 100%;
+  height: auto;
+
+}
+
+.main-title {
+
+  background-color: #2aafaf;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+
+
+}
+
+
+h1 {
 
     color: #2aafaf;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     padding: 20px;
   
+}
+
+  h2 {
+
+    color: #2aafaf;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
   }
 
   p {
