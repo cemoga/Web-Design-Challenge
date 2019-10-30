@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Lattitude-Comparison</title>
+  <title>Lattitude-Wind Speed</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -36,41 +36,49 @@
     </div>
 </nav>
 
-<div class="container padding-it">
+<div class="container-fluid padding-it">
     <div class="row">
-        <div class="col-md-11 col-lg-11 white">
-            <h1>Comparison: Lattitude vs. X</h1><hr>
-            <p>Click any plot to get an in-depth analysis.</p>
+        <div class="col-md-12 col-lg-6 white">
+            <h1>Wind Speed</h1><hr>
+            <img class="big-image img-responsive" src="../Resources/assets/images/fig4.png" alt="Sample Plot">
+            <p>
+                When using the OpenWeatherMap API and plotting the data on more than 500 cities, we were able to conclude that although there is no established pattern between Latitude and Wind Speed, there are a few more cities with wind speeds above 25mph in the Northern Hemisphere than in the Southern Hemisphere.
+            </p>
+        </div>
+        <div class="hidden-lg">&nbsp;</div>
+        <div class="col-md-12 col-lg-5 col-lg-offset-1 white">
+            <h1>Visualizations</h1><hr>
             <div class="row">
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-sm-3">
                     <div>
-                        <h2>vs. Max Temperature</h2>
+                        <h2>Max Temperature</h2>
                          <a href="temperature.html">
-                            <img class="medium-image img-responsive center-block" src="images/fig1.png" alt="Temperature">
+                            <img class="medium-image img-responsive center-block" src="../Resources/assets/images/fig1.png" alt="Temperature">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-sm-3">
                     <div>
-                        <h2>vs. Humidity</h2>
+                        <h2>Humidity</h2>
                         <a href="humidity.html">
-                            <img class="medium-image img-responsive center-block" src="images/fig2.png" alt="Humidity">
+                            <img class="medium-image img-responsive center-block" src="../Resources/assets/images/fig2.png" alt="Humidity">
                         </a>
                      </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div>&nbsp;</div>
+                <div class="col-lg-6 col-sm-3">
                     <div>
-                        <h2>vs. Cloudiness</h2>
+                        <h2>Cloudiness</h2>
                         <a href="cloudiness.html">
-                            <img class="medium-image img-responsive center-block" src="images/fig3.png" alt="Cloudiness">
+                            <img class="medium-image img-responsive center-block" src="../Resources/assets/images/fig3.png" alt="Cloudiness">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-sm-3">
                     <div>
-                        <h2>vs. Wind speed</h2>
+                        <h2>Wind speed</h2>
                         <a href="wind.html">
-                            <img class="medium-image img-responsive center-block" src="images/fig4.png" alt="Wind Speed">
+                            <img class="medium-image img-responsive center-block green-border" src="../Resources/assets/images/fig4.png" alt="Wind Speed">
                         </a>
                     </div>
                 </div>
