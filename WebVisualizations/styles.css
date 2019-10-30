@@ -103,6 +103,13 @@ h1 {
     }
   }
 
+  @media (max-width: 720px) {
+  .navbar-custom {
+    background-color: #87d6d6;
+    }
+  }
+
+
 hr {
 
   margin: 0.5em auto
